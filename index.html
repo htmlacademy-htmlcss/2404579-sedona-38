@@ -5,7 +5,7 @@
     <title>Седона</title>
   </head>
   <body>
-  	<header class="page-header">
+  	<header class="page-header" data-test="header">
 		<a class="header-logo" href="index.html">
 			<img 
 			class="header-logo" 
@@ -52,17 +52,24 @@
 						<span class="visually-hidden">Избранное</span>
 					</a>
 				</li>
-				<button class="header-button" type="submit">ХОЧУ СЮДА!</button>
+				<a class="navigation-link" href="#">Хочу сюда!</a>
 			</ul>
 		</nav>
 	</header>
-	<main class="main-index">
-		<section class="hero">
+	<main class="main-index" data-test="main">
+		<hero class="hero" data-test="hero">
+			<img 
+			class="hero-image"
+			src="#"
+			alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks"
+			width="1200"
+			height="485"
+			 />
 			<h1 class="visually-hidden">Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой!</h1>
 		</section>
-		<section class="advantages">
-			<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-			<p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+		<section class="advantages" data-test="advantages">
+			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!<br>
+			Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 			<ul class="advantages-list">
 				<li class="advantages-item">
 					<h3 class="advantages-title">Настоящий городок</h3>
@@ -86,7 +93,7 @@
 				</li>
 			</ul>
 		</section>
-		<section class="services">
+		<section class="services" data-test="services">
 			<h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
 			<p>Опытный персонал и качественное обслуживание</p>
 			<ul class="services-list">
@@ -104,25 +111,25 @@
 				</li>
 			</ul>
 		</section>
-		<section class="search">
+		<section class="search" data-test="search">
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<div class="button-wrapper">
 				<a class="button" href="catalog.html">Поиск гостиницы в Седоне</a>
 			</div>
 		</section>
-		<section class="subscribe">
+		<section class="subscribe" data-test="subscribe">
 			<h2>Подпишитесь на рассылку</h2>
 			<p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 			<form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-				<label>
-					<input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required />
+				<input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required />
+				<span class="button-subscribe">
 					<button class="button button-subscribe" type="submit">Подписаться</button>
-				</label>
+				</span>
 			</form>
 		</section>
 	</main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
     	<section class="footer-social">
     		<ul class="social-list">
     			<li class="social-item">
